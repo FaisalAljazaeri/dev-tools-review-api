@@ -1,13 +1,13 @@
 const express = require("express");
 const app = express();
-const dotenv = require("dotenv");
+// const dotenv = require("dotenv");
 const mongoose = require("mongoose");
 const cors = require("cors");
 // Import routes
 const reviewsRoute = require("./routes/Reviews");
 
 // Configure dotenv to be able to access environment variables
-dotenv.config({ path: "./.env" });
+// dotenv.config({ path: "./.env" });
 
 // Setting up DB connection options
 mongoose.set("useUnifiedTopology", true);
