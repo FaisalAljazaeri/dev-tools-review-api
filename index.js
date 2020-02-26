@@ -14,9 +14,12 @@ mongoose.set("useUnifiedTopology", true);
 mongoose.set("useNewUrlParser", true);
 
 // Connect to Database
-mongoose.connect(process.env.CONN_STRING, () => {
-    console.log("Connected to DB");
-});
+mongoose.connect(
+    "mongodb+srv://faisal-dev:faisal1019@dev-tools-review-ky864.mongodb.net/test?retryWrites=true&w=majoritys",
+    () => {
+        console.log("Connected to DB");
+    }
+);
 
 // Allow CORS
 app.use(cors());
